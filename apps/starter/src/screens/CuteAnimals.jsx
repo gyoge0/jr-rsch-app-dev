@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
         fontSize: 40,
         color: "indigo",
         // monospace is not a system font?
-        fontFamily: "Courier New, monospace",
+        fontFamily: "Courier New",
         textAlign: "center",
     },
     captionText: {
