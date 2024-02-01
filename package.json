@@ -1,0 +1,29 @@
+{
+  "name": "@gyoge/jr-rsch-app-dev",
+  "private": true,
+  "license": "Apache-2.0",
+  "author": "Yogesh Thambidurai <yogesh@gyoge.com>",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "turbo dev",
+    "dev:starter": "turbo dev --filter=\"{./apps/rn-starter}...\"",
+    "lint": "turbo lint",
+    "test": "turbo test",
+    "build": "turbo build",
+    "build:starter": "turbo build --filter=\"...{./apps/rn-starter}\"",
+    "format": "prettier --write .",
+    "format:dry": "prettier ."
+  },
+  "devDependencies": {
+    "prettier": "^3.2.4",
+    "turbo": "^1.12.2"
+  },
+  "pnpm": {
+    "peerDependencyRules": {
+      "ignoreMissing": [
+        "@babel/*",
+        "expo-modules-*"
+      ]
+    }
+  }
+}

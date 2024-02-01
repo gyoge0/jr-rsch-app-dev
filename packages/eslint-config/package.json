@@ -1,0 +1,21 @@
+{
+  "name": "@acme/eslint-config",
+  "private": true,
+  "license": "Apache-2.0",
+  "author": "Yogesh Thambidurai <yogesh@gyoge.com>",
+  "version": "0.0.0",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "lint": "eslint --ext js,jsx ."
+  },
+  "dependencies": {
+    "eslint": "^8.34.0",
+    "eslint-config-universe": "^11.2.0"
+  },
+  "eslintConfig": {
+    "extends": "."
+  }
+}
