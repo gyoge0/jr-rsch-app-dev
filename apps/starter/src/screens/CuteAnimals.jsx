@@ -1,4 +1,5 @@
 // noinspection HttpUrlsUsage
+/* eslint-disable no-unused-vars */
 
 import React from "react";
 import { Text, StyleSheet, View, Image } from "react-native";
@@ -23,7 +24,8 @@ const styles = StyleSheet.create({
         backgroundColor: "honeydew",
         fontSize: 40,
         color: "indigo",
-        fontFamily: "monospace",
+        // monospace is not a system font?
+        fontFamily: "Courier New, monospace",
         textAlign: "center",
     },
     captionText: {
