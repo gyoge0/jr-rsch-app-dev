@@ -6,13 +6,13 @@
   "version": "0.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "expo start",
+    "dev": "expo start --go",
     "lint": "eslint --ext js,jsx .",
     "build": "expo export --output-dir ./build --platform all",
-    "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
-    "web": "expo start --web",
+    "start": "expo start --go",
+    "android": "expo start --go --android",
+    "ios": "expo start --go --ios",
+    "web": "expo start --go --web",
     "eas-build-post-install": "pnpm run -w build:starter"
   },
   "dependencies": {
