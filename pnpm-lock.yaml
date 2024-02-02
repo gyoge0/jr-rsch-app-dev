@@ -30,8 +30,8 @@ importers:
         specifier: ^1.11.1
         version: 1.11.1
       expo-updates:
-        specifier: ^0.18.19
-        version: 0.18.19(expo@49.0.22)
+        specifier: ^0.24.9
+        version: 0.24.9(expo@49.0.22)
       react:
         specifier: 18.2.0
         version: 18.2.0
@@ -4810,8 +4810,8 @@ packages:
       semver: 7.5.4
     dev: false
 
-  /expo-eas-client@0.6.0:
-    resolution: {integrity: sha512-FSPy0ThcJBvzEzOZVhpOrYyHgQ8U1jJ4v7u7tr1x0KOVRqyf25APEQZFxxRPn3zAYW0tQ+uDTCbrwNymFqhQfw==}
+  /expo-eas-client@0.11.2:
+    resolution: {integrity: sha512-SY7rVFxb4ut/OMTgR7A39Jg+8+hXwQNRpZd+RBpB+B5XV2STj/pWXHnGFhBayEF4umI4SxrOvisY90rlPWVO9Q==}
     dev: false
 
   /expo-file-system@15.4.5(expo@49.0.22):
@@ -4836,10 +4836,6 @@ packages:
     resolution: {integrity: sha512-4pypQdinpNc6XY9wsZk56njvzDh+B/9mISr7FPP3CVk1QGB1nSLh883/BCDSgnsephATZkC5HG+cdE60kCAR6A==}
     dev: false
 
-  /expo-json-utils@0.7.1:
-    resolution: {integrity: sha512-L0lyH8diXQtV0q5BLbFlcoxTqPF5im79xDHPhybB0j36xYdm65hjwRJ4yMrPIN5lR18hj48FUZeONiDHRyEvIg==}
-    dev: false
-
   /expo-keep-awake@12.3.0(expo@49.0.22):
     resolution: {integrity: sha512-ujiJg1p9EdCOYS05jh5PtUrfiZnK0yyLy+UewzqrjUqIT8eAGMQbkfOn3C3fHE7AKd5AefSMzJnS3lYZcZYHDw==}
     peerDependencies:
@@ -4858,12 +4854,6 @@ packages:
       expo-json-utils: 0.12.3
     transitivePeerDependencies:
       - supports-color
-    dev: false
-
-  /expo-manifests@0.7.2:
-    resolution: {integrity: sha512-xlhL0XI2zw3foJ0q2Ra4ieBhU0V2yz+Rv6GpVEaaIHFlIC/Dbx+mKrX5dgenZEMERr/MG7sRJaRbAVB2PaAYhA==}
-    dependencies:
-      expo-json-utils: 0.7.1
     dev: false
 
   /expo-modules-autolinking@1.5.1:
@@ -4891,16 +4881,8 @@ packages:
     resolution: {integrity: sha512-ddQEtCOgYHTLlFUe/yH67dDBIoct5VIULthyT3LRJbEwdpzAgueKsX2FYK02ldh440V87PWKCamh7R9evk1rrg==}
     dev: false
 
-  /expo-structured-headers@3.3.0:
-    resolution: {integrity: sha512-t+h5Zqaukd3Tn97LaWPpibVsmiC/TFP8F+8sAUliwCSMzgcb5TATRs2NcAB+JcIr8EP3JJDyYXJrZle1cjs4mQ==}
-    dev: false
-
-  /expo-updates-interface@0.10.1(expo@49.0.22):
-    resolution: {integrity: sha512-I6JMR7EgjXwckrydDmrkBEX/iw750dcqpzQVsjznYWfi0HTEOxajLHB90fBFqQkUV5i5s4Fd3hYQ1Cn0oMzUbA==}
-    peerDependencies:
-      expo: '*'
-    dependencies:
-      expo: 49.0.22(@babel/core@7.23.9)
+  /expo-structured-headers@3.7.2:
+    resolution: {integrity: sha512-/nGOyeWUXSUy4aIYKJTwQOznRNs0yKqKPAyEE6jtwvOl9qvfDWx9xskNtShioggBhFAssFkV6RBbPn+xZMQtvw==}
     dev: false
 
   /expo-updates-interface@0.15.3(expo@49.0.22):
@@ -4911,22 +4893,22 @@ packages:
       expo: 49.0.22(@babel/core@7.23.9)
     dev: false
 
-  /expo-updates@0.18.19(expo@49.0.22):
-    resolution: {integrity: sha512-dakYQ7XhZtBKMLcim08wum108ZUQcNigurijb/6PKdg3QHn21IzOr/27n6x54DctcoW8w1B8w8y1Xw2svVsx4w==}
+  /expo-updates@0.24.9(expo@49.0.22):
+    resolution: {integrity: sha512-634C/JYYxk8PNkhviXiAejGSbisbmGxBIX6O2ScsJXXbB2cBgGT6nL321ztA38DjfkEpVpw8+kExaHWMrwwAvw==}
     hasBin: true
     peerDependencies:
       expo: '*'
     dependencies:
       '@expo/code-signing-certificates': 0.0.5
-      '@expo/config': 8.1.2
-      '@expo/config-plugins': 7.2.5
+      '@expo/config': 8.5.4
+      '@expo/config-plugins': 7.8.4
       arg: 4.1.0
       chalk: 4.1.2
       expo: 49.0.22(@babel/core@7.23.9)
-      expo-eas-client: 0.6.0
-      expo-manifests: 0.7.2
-      expo-structured-headers: 3.3.0
-      expo-updates-interface: 0.10.1(expo@49.0.22)
+      expo-eas-client: 0.11.2
+      expo-manifests: 0.13.2(expo@49.0.22)
+      expo-structured-headers: 3.7.2
+      expo-updates-interface: 0.15.3(expo@49.0.22)
       fbemitter: 3.0.0
       resolve-from: 5.0.0
     transitivePeerDependencies:
