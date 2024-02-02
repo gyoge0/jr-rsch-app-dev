@@ -18,7 +18,7 @@
   "dependencies": {
     "@react-native-community/masked-view": "^0.1.11",
     "expo": "^49.0.22",
-    "expo-dev-client": "^2.4.12",
+    "expo-dev-client": "^3.3.7",
     "expo-status-bar": "^1.11.1",
     "expo-updates": "^0.18.19",
     "react": "18.2.0",
