@@ -1,0 +1,37 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  format:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up monorepo
+        uses: ./.github/actions/setup-monorepo
+
+      - name: Format code
+        run: pnpm format
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          (git commit -a -m "style: apply prettier code format" && \
+          git push) || \
+          echo "No changes to commit"
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up monorepo
+        uses: ./.github/actions/setup-monorepo
+
+      - name: Lint code
+        run: pnpm lint

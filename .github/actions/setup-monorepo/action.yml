@@ -10,10 +10,6 @@ inputs:
     description: Version of pnpm to use
     default: 8.x
 
-  eas-version:
-    description: Version of EAS CLI to use
-    default: latest
-
 runs:
   using: composite
   steps:
@@ -23,22 +19,17 @@ runs:
         version: ${{ inputs.pnpm-version }}
 
     - name: Setup Node
-      uses: actions/setup-node@v3
+      uses: actions/setup-node@v4
       with:
         node-version: ${{ inputs.node-version }}
         cache: pnpm
-
-    - name: Setup Expo
-      uses: expo/expo-github-action@v8
-      with:
-        eas-version: ${{ inputs.eas-version }}
 
     - name: Install dependencies
       run: pnpm install
       shell: bash
 
     - name: Restore cache
-      uses: actions/cache@v3
+      uses: actions/cache@v4
       with:
         key: turbo-${{ runner.os }}-${{ github.sha }}
         restore-keys: |
