@@ -12,8 +12,8 @@
     "lint": "eslint --ext js,jsx ."
   },
   "dependencies": {
-    "eslint": "^8.34.0",
-    "eslint-config-universe": "^11.2.0"
+    "eslint": "^8.56.0",
+    "eslint-config-universe": "^11.3.0"
   },
   "eslintConfig": {
     "extends": "."
