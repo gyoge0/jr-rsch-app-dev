@@ -3,7 +3,7 @@
 import React from "react";
 import { Text, StyleSheet } from "react-native";
 
-const HomeScreen = () => {
+const Home = () => {
     return <Text style={styles.text}>HomeScreen</Text>;
 };
 
@@ -13,4 +13,4 @@ const styles = StyleSheet.create({
     },
 });
 
-export default HomeScreen;
+export default Home;

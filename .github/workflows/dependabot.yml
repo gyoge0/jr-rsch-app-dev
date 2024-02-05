@@ -19,6 +19,9 @@ jobs:
       - name: Set up monorepo
         uses: ./.github/actions/setup-monorepo
 
+      - name: Check expo compatibility
+        run: pnpm expo install --check
+
       - name: Build app
         run: pnpm build
 
