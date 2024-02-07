@@ -19,7 +19,7 @@ const App = () => {
         { name: "Snapchat", component: Snapchat },
         { name: "Sweden Flag", component: SwedenFlag },
         { name: "Song List", component: SongList },
-        { name: "Norway Flag", component: NorwayFlag}
+        { name: "Norway Flag", component: NorwayFlag },
     ];
 
     // noinspection JSXUnresolvedComponent

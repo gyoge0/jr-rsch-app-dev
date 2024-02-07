@@ -55,7 +55,7 @@ const styles = StyleSheet.create({
         flexDirection: "row",
         height: "50px",
     },
-    red:{
+    red: {
         flex: "1",
         backgroundColor: "#BA0C2F",
     },
