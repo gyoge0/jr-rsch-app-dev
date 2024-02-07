@@ -28,7 +28,7 @@ const App = () => {
                     name="Home"
                     component={Home}
                     initialParams={{
-                        screens: screens.map(screen => screen.name)
+                        screens: screens.map((screen) => screen.name),
                     }}
                 />
                 {screens.map(({ name, component }) => (
