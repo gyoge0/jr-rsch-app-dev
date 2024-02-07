@@ -15,6 +15,7 @@ const App = () => {
         { name: "Cute Animals", component: CuteAnimals },
         { name: "Modify Counter", component: ModifyCounter },
         { name: "Snapchat", component: Snapchat },
+        { name: "Sweden Flag", component: SwedenFlag },
     ];
 
     // noinspection JSXUnresolvedComponent
