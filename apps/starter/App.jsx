@@ -8,6 +8,7 @@ import ModifyCounter from "./src/screens/ModifyCounter";
 import Snapchat from "./src/screens/Snapchat";
 import SwedenFlag from "./src/screens/SwedenFlag";
 import SongList from "./src/screens/SongList";
+import NorwayFlag from "./src/screens/NorwayFlag";
 
 const Stack = createNativeStackNavigator();
 
@@ -18,6 +19,7 @@ const App = () => {
         { name: "Snapchat", component: Snapchat },
         { name: "Sweden Flag", component: SwedenFlag },
         { name: "Song List", component: SongList },
+        { name: "Norway Flag", component: NorwayFlag}
     ];
 
     // noinspection JSXUnresolvedComponent
