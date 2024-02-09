@@ -16,7 +16,7 @@
     "eas-build-post-install": "pnpm run -w build:starter"
   },
   "dependencies": {
-    "@react-navigation/native": "^6.1.9",
+    "@react-navigation/native": "^6.1.10",
     "@react-navigation/native-stack": "^6.9.18",
     "expo": "~50.0.6",
     "expo-status-bar": "~1.11.1",
