@@ -1,19 +1,22 @@
 /* eslint-disable no-unused-vars */
 
 import React from "react";
-import { Button, View, StyleSheet } from "react-native";
+import { Button, View, StyleSheet, FlatList } from "react-native";
 
 const Home = ({ navigation, route }) => {
     const { screens } = route.params;
     return (
         <View>
-            {screens.map((screen) => (
-                <Button
-                    title={screen}
-                    onPress={() => navigation.navigate(screen)}
-                    key={screen}
-                />
-            ))}
+            <FlatList
+                data={screens}
+                keyExtractor={(item) => item}
+                renderItem={({ item }) => (
+                    <Button
+                        title={item}
+                        onPress={() => navigation.navigate(item)}
+                    />
+                )}
+            />
         </View>
     );
 };
