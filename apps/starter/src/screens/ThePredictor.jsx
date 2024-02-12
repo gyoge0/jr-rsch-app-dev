@@ -3,15 +3,11 @@ import {
     Text,
     StyleSheet,
     View,
-    Image,
     TextInput,
     Dimensions,
     Button,
     ImageBackground,
 } from "react-native";
-
-const windowWidth = Dimensions.get("window").width;
-const windowHeight = Dimensions.get("window").height;
 
 const ThePredictor = () => {
     const [text, setText] = useState("");
