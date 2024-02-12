@@ -1,14 +1,14 @@
-import * as React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import * as React from "react";
 
 import CuteAnimals from "./src/screens/CuteAnimals";
 import Home from "./src/screens/Home";
 import ModifyCounter from "./src/screens/ModifyCounter";
-import Snapchat from "./src/screens/Snapchat";
-import SwedenFlag from "./src/screens/SwedenFlag";
-import SongList from "./src/screens/SongList";
 import NorwayFlag from "./src/screens/NorwayFlag";
+import Snapchat from "./src/screens/Snapchat";
+import SongList from "./src/screens/SongList";
+import SwedenFlag from "./src/screens/SwedenFlag";
 
 const Stack = createNativeStackNavigator();
 
