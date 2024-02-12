@@ -6,10 +6,10 @@ import CuteAnimals from "./src/screens/CuteAnimals";
 import Home from "./src/screens/Home";
 import ModifyCounter from "./src/screens/ModifyCounter";
 import NorwayFlag from "./src/screens/NorwayFlag";
-import ThePredictor from "./src/screens/ThePredictor";
 import Snapchat from "./src/screens/Snapchat";
 import SongList from "./src/screens/SongList";
 import SwedenFlag from "./src/screens/SwedenFlag";
+import ThePredictor from "./src/screens/ThePredictor";
 
 const Stack = createNativeStackNavigator();
 
