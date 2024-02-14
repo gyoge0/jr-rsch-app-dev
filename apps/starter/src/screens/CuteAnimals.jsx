@@ -2,19 +2,25 @@
 /* eslint-disable no-unused-vars */
 
 import React from "react";
-import { Text, StyleSheet, View, Image } from "react-native";
+import { Text, StyleSheet, View, Image, TouchableOpacity } from "react-native";
 
-const CuteAnimals = () => {
+const CuteAnimals = ({ navigation }) => {
     const messageStr = "Kitty cat";
 
     return (
         <View>
-            <Text style={styles.titleText}>Cute Animals</Text>
-            <Image
-                style={styles.image}
-                source={{ uri: "http://d23dyxeqlo5psv.cloudfront.net/cat.gif" }}
-            />
-            <Text style={styles.captionText}> {messageStr} </Text>
+            <TouchableOpacity
+                onPress={() => navigation.navigate("Modify Counter")}
+            >
+                <Text style={styles.titleText}>Cute Animals</Text>
+                <Image
+                    style={styles.image}
+                    source={{
+                        uri: "http://d23dyxeqlo5psv.cloudfront.net/cat.gif",
+                    }}
+                />
+                <Text style={styles.captionText}> {messageStr} </Text>
+            </TouchableOpacity>
         </View>
     );
 };

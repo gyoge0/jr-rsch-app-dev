@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { Text, StyleSheet, View, Button } from "react-native";
+import { Text, StyleSheet, View, Button, TouchableOpacity } from "react-native";
 
-const ModifyCounter = () => {
+const ModifyCounter = ({ navigation }) => {
     const [count, setCount] = useState(0);
 
     const incrementCount = () => {
@@ -22,7 +22,9 @@ const ModifyCounter = () => {
                 />
             </View>
             <View style={styles.countBlock}>
-                <Text style={styles.countText}>{count}</Text>
+                <TouchableOpacity onPress={() => navigation.navigate("Home")}>
+                    <Text style={styles.countText}>{count}</Text>
+                </TouchableOpacity>
             </View>
             <View style={styles.buttonBlock}>
                 <Button
