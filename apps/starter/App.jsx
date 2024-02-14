@@ -3,6 +3,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import * as React from "react";
 
 import CuteAnimals from "./src/screens/CuteAnimals";
+import FamousArtwork from "./src/screens/FamousArtwork";
 import Home from "./src/screens/Home";
 import ModifyCounter from "./src/screens/ModifyCounter";
 import NorwayFlag from "./src/screens/NorwayFlag";
@@ -22,6 +23,7 @@ const App = () => {
         { name: "Song List", component: SongList },
         { name: "Norway Flag", component: NorwayFlag },
         { name: "The Predictor", component: ThePredictor },
+        { name: "Famous Artwork", component: FamousArtwork },
     ];
 
     // noinspection JSXUnresolvedComponent
