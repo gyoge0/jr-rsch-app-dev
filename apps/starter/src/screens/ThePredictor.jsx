@@ -4,7 +4,6 @@ import {
     StyleSheet,
     View,
     TextInput,
-    Dimensions,
     Button,
     ImageBackground,
 } from "react-native";
@@ -13,6 +12,7 @@ const ThePredictor = () => {
     const [text, setText] = useState("");
     const [displayText, setDisplayText] = useState("");
     const [prediction, setPrediction] = useState("");
+    // eslint-disable-next-line no-unused-vars
     const [predictionList, setPredictionList] = useState([
         "Yes",
         "No",

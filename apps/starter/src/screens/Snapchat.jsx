@@ -4,7 +4,7 @@ import { Text, View, StyleSheet } from "react-native";
 const Snapchat = () => {
     return (
         <View style={styles.container}>
-            <View style={styles.boxOne}></View>
+            <View style={styles.boxOne} />
             <View style={styles.boxTwo}>
                 <Text style={styles.text}>Log in</Text>
             </View>
