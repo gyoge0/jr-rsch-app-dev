@@ -1,5 +1,5 @@
 module.exports = {
-    extends: "eslint-config-universe",
+    extends: "eslint-config-universe/native",
     // do some additional things with it
     // Disable import/namespace due to https://github.com/facebook/react-native/issues/28549
     // By setting delimiters to `\|/`, this ignore is supported on Windows too
