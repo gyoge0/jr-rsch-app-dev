@@ -25,7 +25,7 @@ const App = () => {
         { name: "Norway Flag", component: NorwayFlag },
         { name: "The Predictor", component: ThePredictor },
         { name: "Famous Artwork", component: FamousArtwork },
-        { name: "Hellos", component: Hellos}
+        { name: "Hellos", component: Hellos },
     ];
 
     // noinspection JSXUnresolvedComponent
