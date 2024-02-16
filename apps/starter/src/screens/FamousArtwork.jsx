@@ -77,7 +77,7 @@ const styles = StyleSheet.create({
         gap: 5,
     },
     paintingTitle: {
-        fontSize: "25",
+        fontSize: 25,
     },
     paintingArtist: {
         width: "100%",
