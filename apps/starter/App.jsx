@@ -4,6 +4,7 @@ import * as React from "react";
 
 import CuteAnimals from "./src/screens/CuteAnimals";
 import FamousArtwork from "./src/screens/FamousArtwork";
+import Hellos from "./src/screens/Hellos";
 import Home from "./src/screens/Home";
 import ModifyCounter from "./src/screens/ModifyCounter";
 import NorwayFlag from "./src/screens/NorwayFlag";
@@ -24,6 +25,7 @@ const App = () => {
         { name: "Norway Flag", component: NorwayFlag },
         { name: "The Predictor", component: ThePredictor },
         { name: "Famous Artwork", component: FamousArtwork },
+        { name: "Hellos", component: Hellos}
     ];
 
     // noinspection JSXUnresolvedComponent
