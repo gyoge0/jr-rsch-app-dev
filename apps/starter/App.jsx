@@ -10,6 +10,7 @@ import ModifyCounter from "./src/screens/ModifyCounter";
 import NorwayFlag from "./src/screens/NorwayFlag";
 import Snapchat from "./src/screens/Snapchat";
 import SongList from "./src/screens/SongList";
+import Spidey from "./src/screens/Spidey";
 import SwedenFlag from "./src/screens/SwedenFlag";
 import ThePredictor from "./src/screens/ThePredictor";
 
@@ -26,6 +27,7 @@ const App = () => {
         { name: "The Predictor", component: ThePredictor },
         { name: "Famous Artwork", component: FamousArtwork },
         { name: "Hellos", component: Hellos },
+        { name: "Spidey", component: Spidey },
     ];
 
     // noinspection JSXUnresolvedComponent
