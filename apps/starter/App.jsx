@@ -2,6 +2,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import * as React from "react";
 
+import Calculator from "./src/screens/Calculator";
 import CuteAnimals from "./src/screens/CuteAnimals";
 import FamousArtwork from "./src/screens/FamousArtwork";
 import Hellos from "./src/screens/Hellos";
@@ -28,6 +29,7 @@ const App = () => {
         { name: "Famous Artwork", component: FamousArtwork },
         { name: "Hellos", component: Hellos },
         { name: "Spidey", component: Spidey },
+        { name: "Calculator", component: Calculator },
     ];
 
     // noinspection JSXUnresolvedComponent
