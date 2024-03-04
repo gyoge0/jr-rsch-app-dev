@@ -3,7 +3,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import * as React from "react";
 
 import Calculator from "./src/screens/Calculator";
-import ComplexCalculator from "./src/screens/ComplexCalculator"
+import ComplexCalculator from "./src/screens/ComplexCalculator";
 import CuteAnimals from "./src/screens/CuteAnimals";
 import FamousArtwork from "./src/screens/FamousArtwork";
 import Hellos from "./src/screens/Hellos";

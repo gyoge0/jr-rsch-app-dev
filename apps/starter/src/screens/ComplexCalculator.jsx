@@ -51,8 +51,8 @@ const ComplexCalculator = () => {
             setDisplayedNumber(x);
         } else if (equalPressed) {
             setFirstOperand(displayedNumber);
-            setEqualPressed(false)
-            setDisplayedNumber(x)
+            setEqualPressed(false);
+            setDisplayedNumber(x);
         } else {
             setDisplayedNumber(displayedNumber * 10 + x);
         }
