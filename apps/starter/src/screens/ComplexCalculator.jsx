@@ -54,33 +54,28 @@ const ComplexCalculator = () => {
         }
     };
 
-    const add = () => {
-        setOperator("+");
+    function resetOperator() {
         setOperatorPressed(true);
         setEqualPressed(false);
         setFirstOperand(displayedNumber);
         setSecondOperand(null);
+    }
+
+    const add = () => {
+        setOperator("+");
+        resetOperator();
     };
     const subtract = () => {
         setOperator("-");
-        setOperatorPressed(true);
-        setEqualPressed(false);
-        setFirstOperand(displayedNumber);
-        setSecondOperand(null);
+        resetOperator();
     };
     const multiply = () => {
         setOperator("*");
-        setOperatorPressed(true);
-        setEqualPressed(false);
-        setFirstOperand(displayedNumber);
-        setSecondOperand(null);
+        resetOperator();
     };
     const divide = () => {
         setOperator("/");
-        setOperatorPressed(true);
-        setEqualPressed(false);
-        setFirstOperand(displayedNumber);
-        setSecondOperand(null);
+        resetOperator();
     };
 
     const negate = () => {
@@ -115,8 +110,7 @@ const ComplexCalculator = () => {
             displayedNumber === 0
         ) {
             return true;
-        }
-        else {
+        } else {
             // noinspection RedundantIfStatementJS
             if (equalPressed && displayedNumber === 0) {
                 return true;
@@ -172,7 +166,9 @@ const ComplexCalculator = () => {
     return (
         <View style={styles.buttonsContainer}>
             <View style={styles.displayRow}>
-                <Text style={styles.displayText}>{displayedNumber}</Text>
+                <Text style={styles.displayText} numberOfLines={1}>
+                    {displayedNumber}
+                </Text>
             </View>
             <View style={styles.buttonRow}>
                 <MiscButton value={isAcNotC ? "ac" : "c"} onPress={clear} />
