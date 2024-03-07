@@ -7,10 +7,12 @@
   "scripts": {
     "dev": "turbo dev",
     "dev:starter": "turbo dev --filter=\"{./apps/starter}...\"",
+    "dev:yelp": "turbo dev --filter=\"{./apps/yelp}...\"",
     "lint": "turbo lint",
     "test": "turbo test",
     "build": "turbo build",
     "build:starter": "turbo build --filter=\"...{./apps/starter}\"",
+    "build:yelp": "turbo build --filter=\"...{./apps/yelp}\"",
     "format": "prettier --write .",
     "format:dry": "prettier ."
   },
