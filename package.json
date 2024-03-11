@@ -7,12 +7,12 @@
   "scripts": {
     "dev": "turbo dev",
     "dev:starter": "turbo dev --filter=\"{./apps/starter}...\"",
-    "dev:yelp": "turbo dev --filter=\"{./apps/yelp}...\"",
+    "dev:foodie": "turbo dev --filter=\"{./apps/foodie}...\"",
     "lint": "turbo lint",
     "test": "turbo test",
     "build": "turbo build",
     "build:starter": "turbo build --filter=\"...{./apps/starter}\"",
-    "build:yelp": "turbo build --filter=\"...{./apps/yelp}\"",
+    "build:foodie": "turbo build --filter=\"...{./apps/foodie}\"",
     "format": "prettier --write .",
     "format:dry": "prettier ."
   },
