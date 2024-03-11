@@ -27,8 +27,8 @@ const FoodieScreen = ({ navigation }) => {
     // },[])
     const [firstLoad, setFirstLoad] = useState(true);
     if (firstLoad) {
-        submit().then(_ => {});
-        setFirstLoad(false)
+        submit().then((_) => {});
+        setFirstLoad(false);
     }
 
     return (

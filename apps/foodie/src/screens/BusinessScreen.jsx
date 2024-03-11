@@ -7,7 +7,7 @@ const FoodieScreen = ({ route, navigation }) => {
     useEffect(() => {
         // noinspection JSUnresolvedReference
         navigation.setOptions({ title: item.name });
-    }, [])
+    }, []);
 
     return (
         <View style={styles.container}>
