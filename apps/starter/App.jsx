@@ -10,6 +10,7 @@ import Hellos from "./src/screens/Hellos";
 import Home from "./src/screens/Home";
 import ModifyCounter from "./src/screens/ModifyCounter";
 import NorwayFlag from "./src/screens/NorwayFlag";
+import RandomState from "./src/screens/RandomState";
 import Snapchat from "./src/screens/Snapchat";
 import SongList from "./src/screens/SongList";
 import Spidey from "./src/screens/Spidey";
@@ -32,6 +33,7 @@ const App = () => {
         { name: "Spidey", component: Spidey },
         { name: "Calculator", component: Calculator },
         { name: "Complex Calculator", component: ComplexCalculator },
+        { name: "Random State", component: RandomState },
     ];
 
     // noinspection JSXUnresolvedComponent
