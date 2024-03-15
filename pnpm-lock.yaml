@@ -30,8 +30,8 @@ importers:
         specifier: ~1.11.1
         version: 1.11.1
       expo-updates:
-        specifier: ~0.24.11
-        version: 0.24.11(expo@50.0.13)
+        specifier: ~0.24.12
+        version: 0.24.12(expo@50.0.13)
       react:
         specifier: 18.2.0
         version: 18.2.0
@@ -79,8 +79,8 @@ importers:
         specifier: ~1.11.1
         version: 1.11.1
       expo-updates:
-        specifier: ~0.24.11
-        version: 0.24.11(expo@50.0.13)
+        specifier: ~0.24.12
+        version: 0.24.12(expo@50.0.13)
       react:
         specifier: 18.2.0
         version: 18.2.0
@@ -4696,8 +4696,8 @@ packages:
       expo: 50.0.13(@babel/core@7.24.0)(@react-native/babel-preset@0.73.21)
     dev: false
 
-  /expo-updates@0.24.11(expo@50.0.13):
-    resolution: {integrity: sha512-SWpjZj7VGWBZJtbVj0gbGY7uZYrE7b+sRRoj/K1ma2ckHwXtAAB8gYI95Zp0joBdRNAbEtoMHYXP66Nrj5l8Ng==}
+  /expo-updates@0.24.12(expo@50.0.13):
+    resolution: {integrity: sha512-35ZpAMSqHIyVGT5mEptaZJBxytu0mv4PIG28i3BQe+GG4ifQtY94aCOCrUwZe8Myzaf4dNVGEUXWTPo+JPCgcw==}
     hasBin: true
     peerDependencies:
       expo: '*'
