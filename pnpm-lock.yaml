@@ -42,8 +42,8 @@ importers:
         specifier: ~2.15.0
         version: 2.15.0(react-native@0.73.6)(react@18.2.0)
       react-native-reanimated:
-        specifier: ~3.8.0
-        version: 3.8.0(@babel/core@7.24.0)(react-native@0.73.6)(react@18.2.0)
+        specifier: ~3.8.1
+        version: 3.8.1(@babel/core@7.24.0)(react-native@0.73.6)(react@18.2.0)
       react-native-safe-area-context:
         specifier: 4.9.0
         version: 4.9.0(react-native@0.73.6)(react@18.2.0)
@@ -91,8 +91,8 @@ importers:
         specifier: ~2.15.0
         version: 2.15.0(react-native@0.73.6)(react@18.2.0)
       react-native-reanimated:
-        specifier: ~3.8.0
-        version: 3.8.0(@babel/core@7.24.0)(react-native@0.73.6)(react@18.2.0)
+        specifier: ~3.8.1
+        version: 3.8.1(@babel/core@7.24.0)(react-native@0.73.6)(react@18.2.0)
       react-native-safe-area-context:
         specifier: 4.9.0
         version: 4.9.0(react-native@0.73.6)(react@18.2.0)
@@ -7022,8 +7022,8 @@ packages:
       react-native: 0.73.6(@babel/core@7.24.0)(react@18.2.0)
     dev: false
 
-  /react-native-reanimated@3.8.0(@babel/core@7.24.0)(react-native@0.73.6)(react@18.2.0):
-    resolution: {integrity: sha512-xoG4+nf+lSmzv37mjTUIT0gYNEIr2Mb8WXgmqR8deCJk8CC6lXT0HRpshTPVAF00LvdzrD2W/rCpiBdHN5FW2w==}
+  /react-native-reanimated@3.8.1(@babel/core@7.24.0)(react-native@0.73.6)(react@18.2.0):
+    resolution: {integrity: sha512-EdM0vr3JEaNtqvstqESaPfOBy0gjYBkr1iEolWJ82Ax7io8y9OVUIphgsLKTB36CtR1XtmBw0RZVj7KArc7ZVA==}
     peerDependencies:
       '@babel/core': ^7.0.0-0
       react: '*'
