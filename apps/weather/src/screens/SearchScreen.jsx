@@ -7,7 +7,7 @@ import SearchBar from "../components/SearchBar";
 
 export const NavigationContext = createContext("navigation");
 
-const SearchScreen = ({navigation}) => {
+const SearchScreen = ({ navigation }) => {
     const [term, setTerm] = useState("");
     const [locations, setLocations] = useState(null);
 

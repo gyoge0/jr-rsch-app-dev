@@ -12,7 +12,7 @@ export const searchLocation = async (name, limit = 5) => {
     const response = await fetch(`${GEO_BASE_URL}/direct?${params}`);
 
     if (!response.ok) {
-        throw new Error(JSON.stringify(await response.json()))
+        throw new Error(JSON.stringify(await response.json()));
     }
 
     return await response.json();
@@ -27,7 +27,7 @@ export const getWeatherAt = async (location) => {
     const response = await fetch(`${DATA_BASE_URL}/weather?${params}`);
 
     if (!response.ok) {
-        throw new Error(JSON.stringify(await response.json()))
+        throw new Error(JSON.stringify(await response.json()));
     }
 
     const json = await response.json();
@@ -47,7 +47,7 @@ export const getWeatherAt = async (location) => {
         })),
         id: json.id,
     };
-}
+};
 
 export const searchWeather = async (term) => {
     const locations = await searchLocation(term);

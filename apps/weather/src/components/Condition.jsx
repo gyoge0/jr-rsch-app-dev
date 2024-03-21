@@ -33,7 +33,7 @@ const styles = StyleSheet.create({
         gap: 25,
     },
     conditionText: {
-        fontSize: 25
+        fontSize: 25,
     },
     conditionImageContainerDay: {
         borderRadius: 50,

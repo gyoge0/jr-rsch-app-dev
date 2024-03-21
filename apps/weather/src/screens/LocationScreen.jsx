@@ -23,7 +23,9 @@ const LocationScreen = ({ route }) => {
     return (
         <View style={styles.container}>
             {error ? (
-                <Text style={styles.text}>Something went wrong! Try again later!</Text>
+                <Text style={styles.text}>
+                    Something went wrong! Try again later!
+                </Text>
             ) : weather ? (
                 <LocationWeather weather={weather} location={location} />
             ) : (
@@ -43,7 +45,7 @@ const styles = StyleSheet.create({
     text: {
         paddingTop: 150,
         fontSize: 25,
-    }
-})
+    },
+});
 
 export default LocationScreen;

@@ -13,7 +13,7 @@ const App = () => {
         <NavigationContainer>
             <Stack.Navigator initialRouteName="Search">
                 <Stack.Screen name="Search" component={SearchScreen} />
-                <Stack.Screen name="Weather" component={LocationScreen}/>
+                <Stack.Screen name="Weather" component={LocationScreen} />
             </Stack.Navigator>
         </NavigationContainer>
     );
