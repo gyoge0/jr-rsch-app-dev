@@ -6,7 +6,7 @@ const DATA_BASE_URL = `${BASE_URL}/data/2.5`;
 export const searchLocation = async (name, limit = 5) => {
     const params = new URLSearchParams({
         q: name,
-        limit: 5,
+        limit,
         appid: TOKEN,
     });
     const response = await fetch(`${GEO_BASE_URL}/direct?${params}`);
@@ -50,7 +50,7 @@ export const getWeatherAt = async (location) => {
 }
 
 export const searchWeather = async (term) => {
-    let locations = await searchLocation(term);
+    const locations = await searchLocation(term);
 
     return await Promise.all(locations.map(getWeatherAt));
 };

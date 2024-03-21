@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
+
 import { NavigationContext } from "../screens/SearchScreen";
 
 const LocationPreview = ({ location }) => {
