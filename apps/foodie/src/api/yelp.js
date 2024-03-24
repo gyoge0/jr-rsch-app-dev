@@ -14,20 +14,21 @@ const searchTerm = async (term) => {
         const body = await response.json();
         // noinspection JSUnresolvedReference
         return body.businesses
-            .filter((business) => business.price && !business.is_closed)
+            .filter((business) => business.rating && !business.is_closed)
             .map((business) => ({
                 image_url: business.image_url,
-                price: (business.price ?? "").length,
-                rating: business.rating,
+                // price: (business.price ?? "").length,
+                rating: Number(business.rating),
                 review_count: business.review_count,
                 name: business.name,
                 id: business.id,
                 phone: business.display_phone,
             }))
             .reduce((group, business) => {
-                const { price } = business;
-                group[price] = group[price] ?? [];
-                group[price].push(business);
+                const { rating } = business;
+                const roundedRating = Math.round(rating);
+                group[roundedRating] = group[roundedRating] ?? [];
+                group[roundedRating].push(business);
                 return group;
             }, {});
     } catch (err) {

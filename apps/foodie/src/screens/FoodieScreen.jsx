@@ -45,7 +45,7 @@ const FoodieScreen = ({ navigation }) => {
                 keyExtractor={(item) => item}
                 renderItem={({ item }) => (
                     <BusinessCarousel
-                        price={item}
+                        rating={item}
                         businesses={businesses[item]}
                         navigation={navigation}
                     />

@@ -12,12 +12,12 @@ const FoodieScreen = ({ route, navigation }) => {
     return (
         <View style={styles.container}>
             <Image source={{ uri: item.image_url }} style={styles.image} />
-            <Text style={styles.content}>
-                Price:{" "}
-                <Text style={{ fontWeight: "bold" }}>
-                    {"$".repeat(item.price)}
-                </Text>
-            </Text>
+            {/*<Text style={styles.content}>*/}
+            {/*    Price:{" "}*/}
+            {/*    <Text style={{ fontWeight: "bold" }}>*/}
+            {/*        {"$".repeat(item.price)}*/}
+            {/*    </Text>*/}
+            {/*</Text>*/}
             <Text style={styles.content}>
                 Rating:{" "}
                 <Text style={{ fontWeight: "bold" }}>{item.rating}</Text>

@@ -1,12 +1,12 @@
 import { Text, View, FlatList, StyleSheet } from "react-native";
 
 import BusinessCard from "./BusinessCard";
-import getPriceText from "../api/prices";
+import getRatingText from "../api/ratings";
 
-const BusinessCarousel = ({ price, businesses, navigation }) => {
+const BusinessCarousel = ({ rating, businesses, navigation }) => {
     return (
         <View style={styles.container}>
-            <Text style={styles.header}>{getPriceText(price)}</Text>
+            <Text style={styles.header}>{getRatingText(rating)}</Text>
             <FlatList
                 contentContainerStyle={styles.scrollWrapper}
                 data={businesses}
