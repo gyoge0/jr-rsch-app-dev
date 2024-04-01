@@ -1,11 +1,10 @@
-import { createContext, useState } from "react";
+import { useState } from "react";
 import { View, Text, StyleSheet, FlatList } from "react-native";
 
 import { searchLocation } from "../api/weather";
 import LocationPreview from "../components/LocationPreview";
 import SearchBar from "../components/SearchBar";
-
-export const NavigationContext = createContext("navigation");
+import { NavigationContext } from "../navigationContext";
 
 const SearchScreen = ({ navigation }) => {
     const [term, setTerm] = useState("");
