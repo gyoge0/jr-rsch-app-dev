@@ -3,23 +3,26 @@ import TodoPreview from "@components/TodoPreview";
 import { useContext } from "react";
 import { StyleSheet, View, FlatList } from "react-native";
 
-import { NavigationContext, TodosContext } from "../context";
+import { TodosContext } from "../todo";
 
 const HomeScreen = ({ navigation }: { navigation: any }) => {
     const { todos } = useContext(TodosContext);
 
     return (
-        <NavigationContext.Provider value={navigation}>
-            <View style={styles.container}>
-                <AddItem onPress={() => {}} />
-                <FlatList
-                    data={todos}
-                    renderItem={({ item }) => (
-                        <TodoPreview item={item} key={item.id} />
-                    )}
-                />
-            </View>
-        </NavigationContext.Provider>
+        <View style={styles.container}>
+            <AddItem
+                onPress={() => {
+                    navigation.push("Create");
+                }}
+            />
+            <FlatList
+                data={todos}
+                keyExtractor={(item) => item.id.toString()}
+                renderItem={({ item }) => (
+                    <TodoPreview item={item} navigation={navigation} />
+                )}
+            />
+        </View>
     );
 };
 

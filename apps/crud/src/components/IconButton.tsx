@@ -1,14 +1,26 @@
 import { Feather } from "@expo/vector-icons";
+import { ComponentProps } from "react";
+import type { ReactNode } from "react";
 import { TouchableOpacity, StyleSheet } from "react-native";
+import type { StyleProp, TextStyle } from "react-native";
+
+interface IconButtonProps {
+    icon: ComponentProps<typeof Feather>["name"];
+    onPress?: () => void;
+    containerStyle?: StyleProp<TextStyle>;
+    iconStyle?: StyleProp<TextStyle>;
+    children?: ReactNode;
+    iconPosition?: "before" | "after";
+}
 
 export const IconButton = ({
     icon,
-    onPress,
-    containerStyle,
-    iconStyle,
+    onPress = () => {},
+    containerStyle = [],
+    iconStyle = [],
     children,
-    iconPosition,
-}) => (
+    iconPosition = "after",
+}: IconButtonProps) => (
     <TouchableOpacity
         onPress={onPress}
         style={[styles.container, containerStyle]}
@@ -19,7 +31,7 @@ export const IconButton = ({
             <></>
         )}
         {children}
-        {iconPosition !== "before" ? (
+        {iconPosition === "after" ? (
             <Feather name={icon} style={[styles.icon, iconStyle]} />
         ) : (
             <></>

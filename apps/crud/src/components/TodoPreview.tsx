@@ -1,19 +1,35 @@
 import IconButton from "@components/IconButton";
+import { useContext } from "react";
 import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
 
-import { Todo } from "../todo";
+import { Todo, TodosContext } from "../todo";
 
-const TodoPreview = ({ item }: { item: Todo }) => (
-    <View style={styles.container}>
-        <TouchableOpacity style={styles.textContainer}>
-            <Text style={styles.text}>{item.title}</Text>
-        </TouchableOpacity>
-        {/** @ts-ignore */}
-        <IconButton icon="edit-2" />
-        {/** @ts-ignore */}
-        <IconButton icon="trash" />
-    </View>
-);
+interface TodoPreviewProps {
+    navigation: any;
+    item: Todo;
+}
+
+const TodoPreview = ({ navigation, item }: TodoPreviewProps) => {
+    const { todos, setTodos } = useContext(TodosContext);
+
+    const remove = () => setTodos(todos.filter((todo) => todo.id !== item.id));
+
+    return (
+        <View style={styles.container}>
+            <TouchableOpacity
+                style={styles.textContainer}
+                onPress={() => navigation.push("Show", item)}
+            >
+                <Text style={styles.text}>{item.title}</Text>
+            </TouchableOpacity>
+            <IconButton
+                icon="edit-2"
+                onPress={() => navigation.push("Edit", item)}
+            />
+            <IconButton icon="trash" onPress={remove} />
+        </View>
+    );
+};
 
 const styles = StyleSheet.create({
     container: {
