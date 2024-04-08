@@ -1,12 +1,17 @@
-import { View, Text, StyleSheet } from "react-native";
-import {  Feather} from "@expo/vector-icons";
+import IconButton from "@components/IconButton";
+import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
 
 import { Todo } from "../todo";
 
 const TodoPreview = ({ item }: { item: Todo }) => (
     <View style={styles.container}>
-        <Text style={styles.text}>{item.title}</Text>
-        <Feather name="trash" style={styles.icon}/>
+        <TouchableOpacity style={styles.textContainer}>
+            <Text style={styles.text}>{item.title}</Text>
+        </TouchableOpacity>
+        {/** @ts-ignore */}
+        <IconButton icon="edit-2" />
+        {/** @ts-ignore */}
+        <IconButton icon="trash" />
     </View>
 );
 
@@ -16,18 +21,22 @@ const styles = StyleSheet.create({
         flexDirection: "row",
         justifyContent: "center",
         alignItems: "center",
-        width: 200
+        width: 200,
+    },
+    textContainer: {
+        flexGrow: 1,
+        alignSelf: "stretch",
+        justifyContent: "center",
     },
     text: {
-        fontWeight: "bold",
         color: "black",
-        flexGrow: 1,
-        textAlign: "left"
+        fontSize: 20,
+        textAlign: "left",
     },
     icon: {
         fontSize: 35,
         alignSelf: "flex-end",
-    }
+    },
 });
 
 export default TodoPreview;

@@ -1,18 +1,25 @@
-import { StyleSheet, Text, View } from "react-native";
-import { Todo } from "../todo";
+import AddItem from "@components/AddItem";
 import TodoPreview from "@components/TodoPreview";
+import { useContext } from "react";
+import { StyleSheet, View, FlatList } from "react-native";
 
-const HomeScreen = () => {
-    const todo: Todo = {
-        title: "test",
-        content: "other",
-    };
+import { NavigationContext, TodosContext } from "../context";
+
+const HomeScreen = ({ navigation }: { navigation: any }) => {
+    const { todos } = useContext(TodosContext);
 
     return (
-        <View style={styles.container}>
-            <Text>Hello World!</Text>
-            <TodoPreview item={todo} />
-        </View>
+        <NavigationContext.Provider value={navigation}>
+            <View style={styles.container}>
+                <AddItem onPress={() => {}} />
+                <FlatList
+                    data={todos}
+                    renderItem={({ item }) => (
+                        <TodoPreview item={item} key={item.id} />
+                    )}
+                />
+            </View>
+        </NavigationContext.Provider>
     );
 };
 
@@ -22,6 +29,7 @@ const styles = StyleSheet.create({
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "flex-start",
+        gap: 10,
     },
     text: {
         paddingTop: 150,
