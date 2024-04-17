@@ -168,8 +168,8 @@ importers:
         specifier: ^9.0.0
         version: 9.0.0
       eslint-config-universe:
-        specifier: ^12.0.0
-        version: 12.0.0(eslint@9.0.0)(prettier@3.2.5)(typescript@5.4.2)
+        specifier: ^12.0.1
+        version: 12.0.1(eslint@9.0.0)(prettier@3.2.5)(typescript@5.4.2)
 
 packages:
 
@@ -4297,8 +4297,8 @@ packages:
       eslint: 9.0.0
     dev: false
 
-  /eslint-config-universe@12.0.0(eslint@9.0.0)(prettier@3.2.5)(typescript@5.4.2):
-    resolution: {integrity: sha512-78UxGByheyDNL1RhszWYeDzWiBaUtLnFSeI20pJI89IXa9OAEZQHzG/iBFpMeaCs7Hqyg0wYJcuCbCx535wB7A==}
+  /eslint-config-universe@12.0.1(eslint@9.0.0)(prettier@3.2.5)(typescript@5.4.2):
+    resolution: {integrity: sha512-Le9KOsPO5EhX9o/jUDhrsnYEpm0uo5/PmxOEZplKk59jmu0LD49Xt/97jCyfl1DVqiE5Ip0Y28xrRGnWZfeO9g==}
     peerDependencies:
       eslint: '>=8.10'
       prettier: '>=3'
