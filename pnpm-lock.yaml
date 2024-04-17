@@ -61,8 +61,8 @@ importers:
         specifier: ^0.73.0
         version: 0.73.0(@babel/core@7.24.4)(react@18.2.0)
       babel-preset-expo:
-        specifier: ^10.0.1
-        version: 10.0.1(@babel/core@7.24.4)
+        specifier: ^10.0.2
+        version: 10.0.2(@babel/core@7.24.4)
 
   apps/starter:
     dependencies:
@@ -110,8 +110,8 @@ importers:
         specifier: ^0.73.0
         version: 0.73.0(@babel/core@7.24.4)(react@18.2.0)
       babel-preset-expo:
-        specifier: ^10.0.1
-        version: 10.0.1(@babel/core@7.24.4)
+        specifier: ^10.0.2
+        version: 10.0.2(@babel/core@7.24.4)
 
   apps/weather:
     dependencies:
@@ -159,8 +159,8 @@ importers:
         specifier: ^0.73.0
         version: 0.73.0(@babel/core@7.24.4)(react@18.2.0)
       babel-preset-expo:
-        specifier: ^10.0.1
-        version: 10.0.1(@babel/core@7.24.4)
+        specifier: ^10.0.2
+        version: 10.0.2(@babel/core@7.24.4)
 
   packages/eslint-config:
     dependencies:
@@ -3451,8 +3451,8 @@ packages:
     transitivePeerDependencies:
       - '@babel/core'
 
-  /babel-preset-expo@10.0.1(@babel/core@7.24.4):
-    resolution: {integrity: sha512-uWIGmLfbP3dS5+8nesxaW6mQs41d4iP7X82ZwRdisB/wAhKQmuJM9Y1jQe4006uNYkw6Phf2TT03ykLVro7KuQ==}
+  /babel-preset-expo@10.0.2(@babel/core@7.24.4):
+    resolution: {integrity: sha512-hg06qdSTK7MjKmFXSiq6cFoIbI3n3uT8a3NI2EZoISWhu+tedCj4DQduwi+3adFuRuYvAwECI0IYn/5iGh5zWQ==}
     dependencies:
       '@babel/plugin-proposal-decorators': 7.24.0(@babel/core@7.24.4)
       '@babel/plugin-transform-export-namespace-from': 7.23.4(@babel/core@7.24.4)
@@ -4769,7 +4769,7 @@ packages:
       '@expo/config-plugins': 7.8.4
       '@expo/metro-config': 0.17.6(@react-native/babel-preset@0.73.21)
       '@expo/vector-icons': 14.0.0
-      babel-preset-expo: 10.0.1(@babel/core@7.24.4)
+      babel-preset-expo: 10.0.2(@babel/core@7.24.4)
       expo-asset: 9.0.2(expo@50.0.15)
       expo-file-system: 16.0.8(expo@50.0.15)
       expo-font: 11.10.3(expo@50.0.15)
