@@ -18,7 +18,7 @@
   "dependencies": {
     "@react-navigation/native": "^6.1.17",
     "@react-navigation/native-stack": "^6.9.26",
-    "expo": "~50.0.14",
+    "expo": "~50.0.17",
     "expo-status-bar": "~1.11.1",
     "expo-updates": "~0.24.12",
     "react": "18.2.0",
@@ -30,9 +30,9 @@
   },
   "devDependencies": {
     "@acme/eslint-config": "*",
-    "@babel/core": "^7.24.3",
+    "@babel/core": "^7.24.4",
     "@types/react-native": "^0.73.0",
-    "babel-preset-expo": "^10.0.1"
+    "babel-preset-expo": "^10.0.2"
   },
   "eslintConfig": {
     "extends": "@acme/eslint-config",
